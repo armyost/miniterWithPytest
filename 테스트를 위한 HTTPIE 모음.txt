@@ -1,0 +1,19 @@
+HTTPIE 명령어 모음
+
+http -v POST localhost:5000/sign-up name=송은우 email=songew@gmail.com profile=Mr.Song password=test1234
+
+http -v POST localhost:5000/sign-up name=김종포 email=armyost@naver.com profile=Mr.Kim password=test1234
+
+http -v POST localhost:5000/login email=songew@gmail.com password=test1234
+
+http -v POST localhost:5000/tweet id:=1 tweet="My First Tweet By song" "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MjI1NTU0NTd9.UMw8DdNoxbxU1fn_nIFhHEAoWsYXaFZysVAsH40VO_Y"
+
+http -v POST localhost:5000/follow id:=1 follow:=2 "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MjI1NTU0NTd9.UMw8DdNoxbxU1fn_nIFhHEAoWsYXaFZysVAsH40VO_Y"
+
+http -v POST localhost:5000/tweet id:=1 tweet="My First Tweet By song"
+
+http -v POST localhost:5000/tweet id:=2 tweet="My First Tweet By jpkim"
+
+http -v POST localhost:5000/follow id:=1 follow:=2
+
+http -v POST localhost:5000/unfollow id:=1 unfollow:=2
